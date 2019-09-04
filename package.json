@@ -1,9 +1,8 @@
 {
   "name": "ember-ide-autocompletion",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "postinstall": "cp -r @ember .."
+    "postinstall": "cp -r @ember $INIT_CWD"
   }
 }
