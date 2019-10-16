@@ -10,6 +10,7 @@ import {
 } from '@ember/-internals/metal';
 import { assert, deprecate } from '@ember/debug';
 
+export { alias };
 /**
 @module @ember/object
 */

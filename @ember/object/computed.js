@@ -15,6 +15,7 @@ export {
   deprecatingAlias,
   and,
   or,
+  alias
 } from './lib/computed/computed_macros';
 
 export {

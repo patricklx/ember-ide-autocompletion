@@ -16,3 +16,5 @@ export function bind(...args: any[]): any;
 export function cancel(...args: any[]): any;
 export function once(...args: any[]): any;
 export function scheduleOnce(...args: any[]): any;
+export function debounce(...args: any[]): any;
+export function next(...args: any[]): any;

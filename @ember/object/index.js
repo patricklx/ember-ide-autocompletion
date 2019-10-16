@@ -2,8 +2,15 @@ import { assert } from '@ember/debug';
 import { assign } from '@ember/polyfills';
 import { isElementDescriptor, setClassicDecorator } from '@ember/-internals/metal';
 
-export { computed } from '@ember/-internals/metal';
+import { computed, defineProperty } from '@ember/-internals/metal';
+export { computed, defineProperty };
+import EmberObject from '@ember/-internals/runtime/lib/system/core_object';
+export default EmberObject;
 
+export { get } from '@ember/-internals/metal/lib/property_get'
+export { set } from '@ember/-internals/metal/lib/property_set'
+export setProperties from '@ember/-internals/metal/lib/set_properties'
+export getProperties from '@ember/-internals/metal/lib/get_properties'
 /**
   Decorator that turns the target function into an Action which can be accessed
   directly by reference.
